@@ -1,0 +1,52 @@
+# @format
+
+services:
+  - type: web
+    name: apigateway
+    env: java
+    buildCommand: "./mvn clean install"
+    startCommand: "java -jar target/apigateway-0.0.1-SNAPSHOT.jar"
+    plan: free
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: default
+
+  - type: web
+    name: departmenntservice
+    env: java
+    buildCommand: "./mvn clean install"
+    startCommand: "java -jar target/departmenntservice-0.0.1-SNAPSHOT.jar"
+    plan: free
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: default
+
+  - type: web
+    name: employeeservice
+    env: java
+    buildCommand: "./mvn clean install"
+    startCommand: "java -jar target/employee-0.0.1-SNAPSHOT.jar"
+    plan: free
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: default
+
+  - type: web
+    name: projectassignmentservice
+    env: java
+    buildCommand: "./mvn clean install"
+    startCommand: "java -jar target/projectassignment-0.0.1-SNAPSHOT.jar"
+    plan: free
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: default
+
+  - type: web
+    name: serviceregistry
+    env: java
+    buildCommand: "./mvn clean install"
+    startCommand: "java -jar target/serviceregistry-0.0.1-SNAPSHOT.jar"
+    plan: free
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: default

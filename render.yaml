@@ -5,27 +5,32 @@ services:
     runtime: docker
     plan: free
     dockerfilePath: ./apigateway/Dockerfile
+    rootDirectory: ./apigate-way
 
   - type: web
     name: departmentservice
     runtime: docker
     plan: free
     dockerfilePath: ./departmentservice/Dockerfile
+    rootDirectory: ./department-service
 
   - type: web
     name: employeeservice
     runtime: docker
     plan: free
     dockerfilePath: ./employeeservice/Dockerfile
+    rootDirectory: ./employee-service
 
   - type: web
     name: projectassignmentservice
     runtime: docker
     plan: free
     dockerfilePath: ./projectassignmentservice/Dockerfile
+    rootDirectory: ./project-assignment-service
 
   - type: web
     name: serviceregistry
     runtime: docker
     plan: free
     dockerfilePath: ./serviceregistry/Dockerfile
+    rootDirectory: ./serviceregistry

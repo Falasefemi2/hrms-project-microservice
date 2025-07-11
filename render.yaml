@@ -1,37 +1,31 @@
 # @format
-
 services:
   - type: web
     name: apigateway
-    runtime: java
-    buildCommand: "./mvn clean install"
-    startCommand: "java -jar target/apigateway-0.0.1-SNAPSHOT.jar"
+    runtime: docker
     plan: free
+    dockerfilePath: ./apigateway/Dockerfile
 
   - type: web
-    name: departmenntservice
-    runtime: java
-    buildCommand: "./mvn clean install"
-    startCommand: "java -jar target/departmenntservice-0.0.1-SNAPSHOT.jar"
+    name: departmentservice
+    runtime: docker
     plan: free
+    dockerfilePath: ./departmentservice/Dockerfile
 
   - type: web
     name: employeeservice
-    runtime: java
-    buildCommand: "./mvn clean install"
-    startCommand: "java -jar target/employee-0.0.1-SNAPSHOT.jar"
+    runtime: docker
     plan: free
+    dockerfilePath: ./employeeservice/Dockerfile
 
   - type: web
     name: projectassignmentservice
-    runtime: java
-    buildCommand: "./mvn clean install"
-    startCommand: "java -jar target/projectassignment-0.0.1-SNAPSHOT.jar"
+    runtime: docker
     plan: free
+    dockerfilePath: ./projectassignmentservice/Dockerfile
 
   - type: web
     name: serviceregistry
-    runtime: java
-    buildCommand: "./mvn clean install"
-    startCommand: "java -jar target/serviceregistry-0.0.1-SNAPSHOT.jar"
+    runtime: docker
     plan: free
+    dockerfilePath: ./serviceregistry/Dockerfile

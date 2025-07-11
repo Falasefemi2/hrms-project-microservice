@@ -3,7 +3,7 @@
 services:
   - type: web
     name: apigateway
-    env: java
+    runtime: docker
     buildCommand: "./mvn clean install"
     startCommand: "java -jar target/apigateway-0.0.1-SNAPSHOT.jar"
     plan: free
@@ -13,7 +13,7 @@ services:
 
   - type: web
     name: departmenntservice
-    env: java
+    runtime: docker
     buildCommand: "./mvn clean install"
     startCommand: "java -jar target/departmenntservice-0.0.1-SNAPSHOT.jar"
     plan: free
@@ -23,7 +23,7 @@ services:
 
   - type: web
     name: employeeservice
-    env: java
+    runtime: docker
     buildCommand: "./mvn clean install"
     startCommand: "java -jar target/employee-0.0.1-SNAPSHOT.jar"
     plan: free
@@ -33,7 +33,7 @@ services:
 
   - type: web
     name: projectassignmentservice
-    env: java
+    runtime: docker
     buildCommand: "./mvn clean install"
     startCommand: "java -jar target/projectassignment-0.0.1-SNAPSHOT.jar"
     plan: free
@@ -43,7 +43,7 @@ services:
 
   - type: web
     name: serviceregistry
-    env: java
+    runtime: docker
     buildCommand: "./mvn clean install"
     startCommand: "java -jar target/serviceregistry-0.0.1-SNAPSHOT.jar"
     plan: free

@@ -4,33 +4,33 @@ services:
     name: apigateway
     runtime: docker
     plan: free
-    dockerfilePath: ./apigateway/Dockerfile
-    rootDirectory: ./apigate-way
+    dockerfilePath: ./api-gateway/apigateway/Dockerfile
+    rootDirectory: ./api-gateway/apigateway
 
   - type: web
     name: departmentservice
     runtime: docker
     plan: free
-    dockerfilePath: ./departmentservice/Dockerfile
-    rootDirectory: ./department-service
+    dockerfilePath: ./department-service/departmentservice/Dockerfile
+    rootDirectory: ./department-service/departmentservice
 
   - type: web
     name: employeeservice
     runtime: docker
     plan: free
-    dockerfilePath: ./employeeservice/Dockerfile
-    rootDirectory: ./employee-service
+    dockerfilePath: ./employee-service/employee/Dockerfile
+    rootDirectory: ./employee-service/employee
 
   - type: web
     name: projectassignmentservice
     runtime: docker
     plan: free
-    dockerfilePath: ./projectassignmentservice/Dockerfile
-    rootDirectory: ./project-assignment-service
+    dockerfilePath: ./project-assignment-service/projectassignment/Dockerfile
+    rootDirectory: ./project-assignment-service/projectassignment
 
   - type: web
     name: serviceregistry
     runtime: docker
     plan: free
-    dockerfilePath: ./serviceregistry/Dockerfile
-    rootDirectory: ./serviceregistry
+    dockerfilePath: ./service-registry/serviceregistry/Dockerfile
+    rootDirectory: ./service-registry/serviceregistry

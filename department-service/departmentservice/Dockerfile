@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy Maven wrapper and pom.xml
-COPY department-service/departmentservice/mvnw .
+COPY department-service/departmentservice/mvn .
 COPY department-service/departmentservice/.mvn .mvn
 COPY department-service/departmentservice/pom.xml .
 

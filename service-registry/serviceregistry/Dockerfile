@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy Maven wrapper and pom.xml
-COPY service-registry/serviceregistry/mvnw .
+COPY service-registry/serviceregistry/mvn .
 COPY service-registry/serviceregistry/.mvn .mvn
 COPY service-registry/serviceregistry/pom.xml .
 

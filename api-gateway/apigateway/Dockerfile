@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy Maven wrapper and pom.xml
-COPY api-gateway/apigateway/mvnw .
+COPY api-gateway/apigateway/mvn .
 COPY api-gateway/apigateway/.mvn .mvn
 COPY api-gateway/apigateway/pom.xml .
 

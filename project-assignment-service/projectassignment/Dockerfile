@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy Maven wrapper and pom.xml
-COPY project-assignment-service/projectassignment/mvnw .
+COPY project-assignment-service/projectassignment/mvn .
 COPY project-assignment-service/projectassignment/.mvn .mvn
 COPY project-assignment-service/projectassignment/pom.xml .
 

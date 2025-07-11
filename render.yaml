@@ -11,27 +11,26 @@ services:
     name: departmentservice
     runtime: docker
     plan: free
-    dockerfilePath: Dockerfile
+    dockerfilePath: ./Dockerfile
     dockerContext: department-service/departmentservice
 
   - type: web
     name: employeeservice
     runtime: docker
     plan: free
-    dockerfilePath: Dockerfile
+    dockerfilePath: ./Dockerfile
     dockerContext: employee-service/employee
 
   - type: web
     name: projectassignmentservice
     runtime: docker
     plan: free
-    dockerfilePath: Dockerfile
+    dockerfilePath: ./Dockerfile
     dockerContext: project-assignment-service/projectassignment
 
   - type: web
     name: serviceregistry
     runtime: docker
     plan: free
-    dockerfilePath: Dockerfile
+    dockerfilePath: ./Dockerfile
     dockerContext: service-registry/serviceregistry
-    
